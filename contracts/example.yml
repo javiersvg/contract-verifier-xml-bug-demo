@@ -1,0 +1,9 @@
+request:
+  url: /hello
+  method: GET
+response:
+  status: 200
+  body: |
+    <customer>
+      <email>customer@test.com</email>
+    </customer>

@@ -1,0 +1,32 @@
+{
+    "imposters": [
+        {
+            "port": 8088,
+            "protocol": "http",
+            "stubs": [
+                {
+                    "predicates": [
+                        {
+                            "equals": {
+                                "method": "GET",
+                                "path": "/hello"
+                            }
+                        }
+                    ],
+                    "responses": [
+                        {
+                            "is": {
+                                "statusCode": 200,
+                                "headers": {
+                                    "Location": "http://localhost:4545/customers/123",
+                                    "Content-Type": "application/xml"
+                                },
+                                "body": "<customer><email>customer@test.com</email></customer>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
