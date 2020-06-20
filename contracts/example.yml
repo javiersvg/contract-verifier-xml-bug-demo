@@ -4,6 +4,6 @@ request:
 response:
   status: 200
   body: |
-    <customer>
+    <ns1:customer xmlns:ns1="http://demo.com/testns">
       <email>customer@test.com</email>
-    </customer>
+    </ns1:customer>
